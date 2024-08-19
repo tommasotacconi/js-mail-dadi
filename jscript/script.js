@@ -9,3 +9,17 @@ var playerOneDice = Math.floor(Math.random() * 6) + 1; //(0-5), +1, (1-6)
 var playerTwoDice = Math.floor(Math.random() * 6) + 1;
 
 console.log('playerOneDice', playerOneDice, ',', 'playerTwoDice', playerTwoDice)
+
+//2.
+var winner;
+
+if (playerOneDice > playerTwoDice) {
+  winner = "Giocatore 1";
+
+} else if (playerOneDice < playerTwoDice) {
+  winner = "Giocatore 2";
+} else {
+  winner = "Nessun vincitore"
+}
+
+console.log(winner)
