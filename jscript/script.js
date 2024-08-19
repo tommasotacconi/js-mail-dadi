@@ -66,10 +66,12 @@ loginButton.addEventListener('click', function () {
   //3.
   let emailControl = 'Unauthorized email';
   for (i = 0; i < emails.length; i++) {
+    console.log(emails[i]);
     if (insertedEmail == emails[i]) emailControl = 'Successful login';
+    console.log(emailControl);
   }
   
-  document.getElementById('login').innerHTML += emailControl;
+  document.getElementById('result').innerHTML = emailControl;
 });
 
 
