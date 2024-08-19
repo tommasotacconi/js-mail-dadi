@@ -61,6 +61,15 @@ console.log(emailField);
 loginButton.addEventListener('click', function () {
   insertedEmail = emailField.value.trim();
   console.log (insertedEmail);
+
+  //DATA PROCESSING
+  //3.
+  let emailControl = 'Unauthorized email';
+  for (i = 0; i < emails.length; i++) {
+    if (insertedEmail == emails[i]) emailControl = 'Successful login';
+  }
+  
+  document.getElementById('login').innerHTML += emailControl;
 });
 
 
