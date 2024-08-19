@@ -4,22 +4,39 @@
 3. Stampiamo in pagina i due tiri e il risultato
  */
 
+//SET UP PHASE
+const winnerSentence = document.getElementById('winner-sentence');
+const dice1Number = document.getElementById('dice1-number')
+const dice2Number = document.getElementById('dice2-number')
+console.log(winnerSentence, dice1Number, dice2Number)
 //1.
-var playerOneDice = Math.floor(Math.random() * 6) + 1; //(0-5), +1, (1-6)
-var playerTwoDice = Math.floor(Math.random() * 6) + 1;
+const player1Dice = Math.floor(Math.random() * 6) + 1; //(0-5), +1, (1-6)
+const player2Dice = Math.floor(Math.random() * 6) + 1;
 
-console.log('playerOneDice', playerOneDice, ',', 'playerTwoDice', playerTwoDice)
+console.log('player1Dice', player1Dice, 'player2Dice', player2Dice)
 
+//PROCESSING PHASE
 //2.
-var winner;
+let winner;
 
-if (playerOneDice > playerTwoDice) {
+if (player1Dice > player2Dice) {
   winner = "Giocatore 1";
-
-} else if (playerOneDice < playerTwoDice) {
+} else if (player1Dice < player2Dice) {
   winner = "Giocatore 2";
-} else {
-  winner = "Nessun vincitore"
 }
 
-console.log(winner)
+console.log(winner);
+
+//FINAL RESULT
+//.3
+dice1Number.innerText = player1Dice;
+dice2Number.innerText = player2Dice;
+
+if (player1Dice != player2Dice) {
+  winnerSentence.innerHTML += winner
+} else {
+  winnerSentence.innerHTML = "Non c'è nessun vincitore"
+}
+//
+
+
