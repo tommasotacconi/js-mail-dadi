@@ -4,7 +4,7 @@
 3. Stampiamo in pagina i due tiri e il risultato
  */
 
-//SET UP PHASE
+/* //SET UP PHASE
 const winnerSentence = document.getElementById('winner-sentence');
 const dice1Number = document.getElementById('dice1-number')
 const dice2Number = document.getElementById('dice2-number')
@@ -37,6 +37,18 @@ if (player1Dice != player2Dice) {
 } else {
   winnerSentence.innerHTML = "Non c'è nessun vincitore"
 }
-//
+ */
+
+/* ESERCIZIO 2 - Finta Login
+1. Inventa una lista di email autorizzate
+2. Chiedi all’utente la sua email, con un piccolo form.
+3. Controlla che sia nella lista di chi può accedere,
+stampa un messaggio appropriato sull’esito del controllo.
+ */
+
+//1.
+const emails = ['davide.sassi@live.it', 'maria.casale@outlook.com', 'teresa.salari@gmail.com', 'angela.pavoni@gmail.com', 'marcello.bernardi@gmail.com', 'roberto.fresoli@tiscali.it', 'giovanni.ponte@virgilio.com', 'alberto.santi@gmail.com'];
+console.table(emails);
+
 
 
