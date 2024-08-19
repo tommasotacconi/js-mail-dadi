@@ -46,9 +46,25 @@ if (player1Dice != player2Dice) {
 stampa un messaggio appropriato sull’esito del controllo.
  */
 
+// SET UP PHASE
 //1.
 const emails = ['davide.sassi@live.it', 'maria.casale@outlook.com', 'teresa.salari@gmail.com', 'angela.pavoni@gmail.com', 'marcello.bernardi@gmail.com', 'roberto.fresoli@tiscali.it', 'giovanni.ponte@virgilio.com', 'alberto.santi@gmail.com'];
 console.table(emails);
+const emailField = document.querySelector('input');
+const loginButton = document.querySelector('button');
+let insertedEmail;
+console.log(emailField);
+
+
+// DATA FINDING
+//2.
+loginButton.addEventListener('click', function () {
+  insertedEmail = emailField.value.trim();
+  console.log (insertedEmail);
+});
+
+
+
 
 
 
