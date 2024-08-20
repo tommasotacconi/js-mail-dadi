@@ -71,7 +71,7 @@ loginButton.addEventListener('click', function () {
     console.log(emailControl);
   }
   
-  document.getElementById('login').innerHTML += emailControl;
+  document.getElementById('result').innerHTML = emailControl;
 });
 
 
