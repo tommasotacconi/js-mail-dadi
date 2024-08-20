@@ -54,6 +54,11 @@ body {
 } */
 
 /* Utilities */
-#dice-game {
+#dice-game,
+#login {
     margin: 10px 30px;
+}
+
+#login {
+    margin-top: 100px
 }

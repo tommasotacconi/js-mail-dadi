@@ -4,11 +4,11 @@
 3. Stampiamo in pagina i due tiri e il risultato
  */
 
-/* //SET UP PHASE
+//SET UP PHASE
 const winnerSentence = document.getElementById('winner-sentence');
-const dice1Number = document.getElementById('dice1-number')
-const dice2Number = document.getElementById('dice2-number')
-console.log(winnerSentence, dice1Number, dice2Number)
+const dice1Number = document.getElementById('dice1-number');
+const dice2Number = document.getElementById('dice2-number');
+console.log(winnerSentence, dice1Number, dice2Number);
 //1.
 const player1Dice = Math.floor(Math.random() * 6) + 1; //(0-5), +1, (1-6)
 const player2Dice = Math.floor(Math.random() * 6) + 1;
@@ -37,7 +37,7 @@ if (player1Dice != player2Dice) {
 } else {
   winnerSentence.innerHTML = "Non c'è nessun vincitore"
 }
- */
+
 
 /* ESERCIZIO 2 - Finta Login
 1. Inventa una lista di email autorizzate
@@ -71,7 +71,7 @@ loginButton.addEventListener('click', function () {
     console.log(emailControl);
   }
   
-  document.getElementById('result').innerHTML = emailControl;
+  document.getElementById('login').innerHTML += emailControl;
 });
 
 
